@@ -1,0 +1,409 @@
+body{
+    background-color:#3D087B ;
+    margin-top: 0px;
+}
+.clock > img{
+    margin:10px 16px 15px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 520px;
+    height: 363px;
+    background: #FFFFFF;
+    border:#EDEDED 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.wake{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wake select{
+    color:#3D087BDE;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width:300px;
+    height: 40px;
+    font-size: 13px;
+}
+.wake p{
+color: #3D087B;
+font:18px Manrope;
+}
+hr{
+    width:35px;
+    transform: rotate(90deg);
+    margin: 20px 0;
+    color: #C2C2C2;
+}
+.good{
+    background-color: #6a4299;
+    font-family: 'Tilt Warp', cursive;    color: white;
+    width: 520px;
+    padding: 20px 0px 20px 16px;
+    border-radius: 6px;
+    margin: 10px 0px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.alarm{
+    display: flex;
+}
+button{
+    color:white;
+    width:280px;
+    height: 52px;
+    margin-right: 10px;
+    font-size: 25px;
+    word-spacing: 2px;
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to right,#6E54EC,#ce51fb,#FC5EFF);
+}
+button:hover{
+    background-image: linear-gradient(to left,#6E54EC,#ce51fb,#FC5EFF);
+}
+.wakeup{
+    background-color:#6a4299;
+    border-radius: 10px;
+    color: #F25CFE;
+    padding: 0px 0px 3px 10px;
+    width: 240px;
+    height: 90px;
+}
+.right{
+    margin-left: 15px;
+}
+.timebox{
+    background-color: #FFFFFF;
+    width:520px;
+    height:100px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-left: -10px;
+}
+.ti{
+    background-color: #FFFFFF;
+    padding: 25px 0px 0px 5px;
+    color: #3D087B;
+    font-size:20px;
+}
+.t{
+    font-size: 35px;
+    padding-left: 10px;
+}
+.t1{
+    font-size: 20px;
+    padding-left: 6px;
+}
+.am{
+    background-image: url(./AM_svg.svg);
+    background-position: no-repeat;
+    background-size: cover;
+    width: 60px;
+    margin-left: 20px;
+    height: 70px;
+    font-size: 25px;
+    padding: 20px 10px 0px 10px;
+}
+.timebox p{
+    color: #3D087B;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 20px;
+   margin:0px 20px;
+   text-align: center;
+   
+}
+.time{
+ background-color:  #F6E2FF;
+ color:#8A11BF;
+ width:60px;
+ margin:15px 10px;
+ height:90px;
+}
+.z1{
+    width: 380px;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    opacity: 0.71;
+    height: 80px;
+    position: relative;
+    z-index: -1;
+    top:-70px;
+    right: -45px;
+
+}
+.z2{
+    width: 335px;
+    background-color:#8538a6;
+    border-radius: 10px;
+    opacity: 0.71;
+    height: 80px;
+    position: relative;
+    z-index: -2;
+    top:-140px;
+    right: -65px;
+}
+.grab{
+    font-family:'Tilt Warp', cursive ;
+    color:#8E53F0;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 8px  ;
+    font-size:15px;
+    width:510px;
+    margin-bottom:10px;  
+    text-align: center;
+}
+.my{
+    height: 100px;
+    margin-bottom: 36px;
+    margin-left:12px;
+}
+footer{
+    color: #B85EBF;
+    text-align: end;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media screen and (max-width:420px) {
+    .clock > img{
+        margin-top:10px;
+       
+    }
+    
+    .box{
+        margin-top: 130px;
+        width:340px;
+        height:370px;
+        /* margin-left: 55px; */
+        /* margin-left: 20px; */
+        /* margin-right: 20px; */
+    }
+    .wakeup{
+        width: 210px;
+    }
+    .wake select{
+        width: 120px;
+    }
+    .wake{
+        width:340px;
+    }
+    .hr{
+        width:10px;
+    }
+    .good{
+        width: 340px;
+        margin: 10px 0px 10px 0px;
+    }
+    button{
+        width:130px;
+    }
+    /* .right{
+        margin-right: 20px;
+    }  */
+    .alarm{
+        /* margin-left: 20px; */
+        margin-bottom: 20px;;
+    }
+    .my{
+        /* margin-left: 40px; */
+        position: absolute;
+        top:96px;
+        right: 10px;
+    }
+    .timebox{
+        width: 95vw;
+        gap:0px;
+        position: relative;
+        left: 2px;
+    }
+    .time{
+         margin-left: -1px;
+    }
+    .am{
+        margin-left: -1px;
+        margin-right: 5px;
+    }
+    .z1{
+        width: 320px;
+        position: relative;
+        z-index: -1;
+        top:-70px;
+        right: -15px;
+    
+    }
+    .z2{
+        width: 280px;
+        position: relative;
+        z-index: -2;
+        top:-140px;
+        right: -35px;
+    }
+    .grab{
+        width:90vw;
+    font-size:12px;
+    margin-left:-2vw;
+    }
+    .imgs img{
+        width: 95vw;
+        margin-left:-2vw;
+
+    }
+    footer{
+        font-size: 11px;
+        padding-left: -20px;
+    }
+   
+}
+/* @media screen and (max-width:420px) {
+    .clock > img{
+        margin:10px 100px;
+    }
+    
+    .box{
+        width:360px;
+        height:350px;
+        margin-left:75px;
+        margin-right: 20px;
+    }
+    .wakeup{
+        width: 220px;
+    }
+    .wake select{
+        width: 180px;
+    }
+    .hr{
+        width:10px;
+    }
+    .good{
+        width: 360px;
+        margin: 10px 0px 10px 80px;
+    }
+    button{
+        width:130px;
+    }
+     .right{
+        margin-right: 20px;
+    } 
+    .alarm{
+        margin-left: 80px;
+        margin-bottom: 20px;;
+    }
+    .my{
+        margin-left: 80px;
+    }
+    .timebox{
+        width: 370px;
+    }
+    .time{
+         margin: 5px;
+    }
+    .z1{
+        width: 350px;
+        position: relative;
+        z-index: -1;
+        top:-70px;
+        right: -15px;
+    
+    }
+    .z2{
+        width: 335px;
+        position: relative;
+        z-index: -2;
+        top:-140px;
+        right: -25px;
+    }
+    .grab{
+        width: 360px;
+    font-size:12px;
+    margin-left: 70px;
+    }
+    .imgs img{
+        width: 360px;
+        margin-left: 70px;
+    }
+    footer{
+        font-size: 11px;
+    }
+} */
+@media screen and (min-width:500px) and (max-width:780px) {
+    .box{
+        width:700px;
+        height:380px;
+        margin:0px 20px;
+        margin-top: 150px;
+    }
+    .box p{
+        font-size: 19px;
+    }
+    .wake select{
+        width: 400px;
+    }
+    .hr{
+        width:20px;
+    }
+    .good{
+        width: 700px;
+        margin: 10px 0px 10px 20px;
+    }
+    button{
+        width:400px;
+    }
+    .alarm{
+        margin-left: 20px;
+        margin-bottom: 20px;;
+    } 
+    .my{
+        margin-left: 0px;
+        position: absolute;
+        top:120px;
+    }
+    .timebox{
+        width: 94vw;
+    }
+    .time{
+         margin: 45px;
+    }
+    .z1{
+        width: 650px;
+        position: relative;
+        z-index: -1;
+        top:-70px;
+        right: -25px;
+    
+    }
+    .z2{
+        width: 605px;
+        position: relative;
+        z-index: -2;
+        top:-140px;
+        right: -45px;
+    }
+    .grab{
+        width: 89vw;
+    font-size:12px;
+    margin-left: 0px;
+    }
+    footer{
+        font-size: 25px;
+    }
+    .imgs img{
+        width: 700px;
+    }
+    .wakeup{
+        width:300px;
+    padding: 10px 0px 3px 10px;
+    line-height: 22px;
+    }
+    
+}
